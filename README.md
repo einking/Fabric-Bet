@@ -1,5 +1,16 @@
-peer chaincode invoke --tls /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C mychannel -n mycc -c '{"function":"transferCopyright","Args":['2017','1','4','10']}'
+# 基于Hyperledger-Fabric实现的一个竞猜
+**这是简单的竞猜**
+- 系统生成随机数。
+- 用户进行竞猜
 
-peer chaincode invoke --tls /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C mychannel -n mycc -c '{"function":"creatCopyright","Args":["2017","1","256","TOM"]}'
+声明：chaincode：Go；SDK：Node。
 
-peer chaincode invoke --tls /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C mychannel -n mycc -c '{"function":"readCopyright","Args":["2017"]}'
+使用这个应用之前请确保你的Hyperledger-Fabric环境是没有问题的！
+1、 下载请将目录放置到你认为可以运行这个项目的目录下，这个问题由于你fabric版本的问题，我也无法确认。下面的建议提供参考：
+  本人的路径是和fabric-samples同一个路径！
+2、 进入bet目录下执行：
+  ` ./startCopyright.sh `
+3、打开浏览器，查看：127.0.0.1:3000
+
+
+不敢保证你的成功运行，这里面关系到Node版本、Go的版本的诸多问题。
