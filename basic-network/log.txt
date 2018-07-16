@@ -1,0 +1,23 @@
+[36m2018-04-05 10:40:00.191 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-04-05 10:40:00.191 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-04-05 10:40:00.192 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 003[0m Using default escc
+2018-04-05 10:40:00.192 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 004[0m Using default vscc
+[36m2018-04-05 10:40:00.193 UTC [msp/identity] Sign -> DEBU 005[0m Sign: plaintext: 0A92070A6808031A0B0880FA97D60510...65616450726F647563740A0432303135 
+[36m2018-04-05 10:40:00.193 UTC [msp/identity] Sign -> DEBU 006[0m Sign: digest: 4639B4A253735AD9D2378A09FAD19420A32EC11CAE3105E228F4379B2673DD7E 
+Error: Error endorsing invoke: rpc error: code = Unknown desc = chaincode error (status: 500, message: Invalid Smart Contract function name.) - <nil>
+Usage:
+  peer chaincode invoke [flags]
+
+Flags:
+  -C, --channelID string   The channel on which this command should be executed (default "testchainid")
+  -c, --ctor string        Constructor message for the chaincode in JSON format (default "{}")
+  -n, --name string        Name of the chaincode
+
+Global Flags:
+      --cafile string              Path to file containing PEM-encoded trusted certificate(s) for the ordering endpoint
+      --logging-level string       Default logging level and overrides, see core.yaml for full syntax
+  -o, --orderer string             Ordering service endpoint
+      --test.coverprofile string   Done (default "coverage.cov")
+      --tls                        Use TLS when communicating with the orderer endpoint
+  -v, --version                    Display current version of fabric peer server
+

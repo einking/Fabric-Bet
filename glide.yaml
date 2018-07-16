@@ -1,0 +1,6 @@
+package: .
+import:
+- package: github.com/hyperledger/fabric
+  subpackages:
+  - core/chaincode/shim
+  - protos/peer
